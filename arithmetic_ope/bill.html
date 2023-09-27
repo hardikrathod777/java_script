@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            document
+        </title>
+    </head>
+    <body>
+
+        <h1 id="laptop"></h1>
+        <h1 id="mouse"></h1>
+        <h1 id="keyboard"></h1>
+        <h1 id="desktop"></h1>
+        <h1 id="total"></h1>
+        <h1 id="d_value"></h1>
+        <h1 id="g_value"></h1>
+
+        <script>
+            var laptop = 54000;
+            var mouse = 5000;
+            var keyboard = 6500;
+            var desktop = 20000;
+            var discount = 25;
+            var total = laptop+ mouse+ keyboard+ desktop;
+            var discount_value = (total*discount)/100;
+            var grande_total = total-discount_value;
+
+            document.getElementById('laptop').innerHTML = "laptop :- "+laptop;
+            document.getElementById('mouse').innerHTML = "mouse :- "+mouse;
+            document.getElementById('keyboard').innerHTML = "key board :- "+keyboard;
+            document.getElementById('desktop').innerHTML = "desktop :- "+desktop;
+            document.getElementById('total').innerHTML = "total :- "+total;
+            document.getElementById('d_value').innerHTML = "discount value :- "+discount_value;
+            document.getElementById('g_value').innerHTML = "grand value :- "+grande_total;
+        </script>
+    </body>
+</html>
