@@ -97,17 +97,19 @@
 h2,p{
     color: white;
 }
-
+  body{
+    background-image: linear-gradient(to left bottom, #ff0091, #f000a8, #db1bc0, #bc32d6, #9245ea, #6b67f9, #3f7fff, #0092ff, #00b2ff, #00cfff, #00e8ff, #00ffef);
+  }
     </style>
 </head>
 <body>
     <div class="position">
     <div class="col-xxl-3" style="background: black; border-radius: 30px;">
         <div style="justify-content: center; display: flex;">
-            <img src="img/harry.jpg" class="img-style"/>
+            <img src="img/h.jpg" class="img-style"/>
         </div>
-        <h2 class="text-center fw-bold">Hardik Rathod</h2>
-        <p class="text-center fw-bold">Full-Stack Developer</p>
+        <h2 class="text-center fw-bold" id="name"></h2>
+        <p class="text-center fw-bold" id="course"></p>
         <p class="text-center fw-bold pt-2"><i class="fa-regular fa-envelope fw-bold"></i> Harahrathod1432@gmail.com</p>
         <p class="text-center fw-bold"><i class="fa-solid fa-phone"></i> 9726518381</p>
         <div class="d-flex justify-content-center pt-5" style="padding-bottom: 80px;">
@@ -118,5 +120,16 @@ h2,p{
 
     
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script>
+      var name= 'Hardik Rathod';
+      var course= 'Full-Stack Developer';
+      var email= 'Harahrathod1432@gmail.com';
+      var number='9726518381';
+
+      document.getElementById("name").innerHTML=name;
+      document.getElementById("course").innerHTML=course;
+      document.getElementById("email").innerHTML=email;
+      document.getElementById("number").innerHTML=number;
+    </script>
 </body>
 </html>
