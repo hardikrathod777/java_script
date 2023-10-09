@@ -85,6 +85,13 @@
             </div>
         </div>
     </div>
+    <br/>
+    <div style="background-color: aqua; width: 400px; margin: 0 auto;">
+        <h1 id="con" style="text-align: center;"></h1>
+    </div>
+    <div style="background-color: darkgray; width: 400px; margin: 0 auto;">
+        <h1 id="up_70" style="text-align: center"></h1>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         var science_p = 30;
@@ -92,11 +99,11 @@
         var maths_p = 20;
         var maths_t = 70;
         var hindi_p = 25;
-        var hindi_t = 37;
+        var hindi_t = 80;
         var gujarati_p = 45;
         var gujarati_t = 22;
         var physics_p = 21;
-        var physics_t = 68;
+        var physics_t = 80;
         var total =science_p+science_t+maths_p+maths_t+gujarati_p+gujarati_t+hindi_p+hindi_t+physics_p+physics_t;
         var per=total/5;
 
@@ -117,6 +124,21 @@
         document.getElementById('t5').innerHTML= physics_p+physics_t;
         document.getElementById('Total').innerHTML=total;
         document.getElementById('per').innerHTML=per+"%";
+
+        if(per>60){
+            document.getElementById('con').innerHTML="congrate.....";
+            if(per>90){
+                document.getElementById('up_70').innerHTML="you get 100% discount...";
+            }else if(per>80){
+                document.getElementById('up_70').innerHTML="you get 50% discount...";
+            }
+            else{
+                document.getElementById('up_70').innerHTML="you get 5% discount...";
+            }
+        }
+        else{
+            document.getElementById('con').innerHTML="sorry, you are not aligibal.."
+        }
     </script>
 </body>
 </html>
