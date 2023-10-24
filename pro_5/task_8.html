@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h"></h1>
+    <script>
+        let word = ["Python", "Javascript", "Go", "Java", "PHP", "Ruby"];
+
+        function Long(str) {
+            return str.length >= 8;
+        }
+
+        let longWords = word.filter(Long);
+        document.getElementById('h').innerHTML=longWords;
+    </script>
+</body>
+</html>

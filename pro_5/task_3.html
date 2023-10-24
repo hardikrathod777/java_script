@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="h"></h2>
+    <h2 id="h1"></h2>
+    <script>
+        function maxMin(arr) {
+        let max = arr[0];
+        let min = arr[0];
+
+        for (let i = 1; i < arr.length; i++) {
+            if (arr[i] > max) {
+            max = arr[i];
+            }
+            if (arr[i] < min) {
+            min = arr[i];
+            }
+        }
+
+        return [max, min];
+        }
+
+        let numbers = [10, 5, 8, 12, 3, 7];
+        let result = maxMin(numbers);
+        document.getElementById('h').innerHTML="maximum value :" + result[0];
+        document.getElementById('h1').innerHTML="minimum value :" + result[1];
+
+    </script>
+</body>
+</html>

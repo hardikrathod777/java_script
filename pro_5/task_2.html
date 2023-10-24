@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="h"></h2>
+    <h2 id="h1"></h2>
+    <script>
+        var numbers = [10, 20, 30, 40, 50];
+        var sum = 0;
+
+        for (var i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+        }
+
+        document.getElementById('h').innerHTML="sum for loop : " + sum;
+        sum = 0;
+
+        numbers.forEach(function (number) {
+        sum += number;
+        });
+
+        document.getElementById('h1').innerHTML=" sum foreach loop :" + sum;
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h"></h1>
+
+
+    <script>
+        function Found(value, array) {
+            for (let i = 0; i < array.length; i++) {
+                if (array[i] === value) {
+                    return true;
+                }
+            }
+
+        return false;
+        }
+
+        let arr = [1, 2, 3, 4, 5];
+        let val = 9;
+        let result = Found(val, arr);
+        document.getElementById('h').innerHTML=result;
+
+    </script>
+</body>
+</html>
