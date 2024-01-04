@@ -1,0 +1,43 @@
+.header-style{
+    height: 60px;
+    background-color: #E6E6E6;
+}
+.logo-img{
+    height: 70px;
+}
+.cart-style{
+    width: 40px;
+    height: 35px;
+}
+.card-body{
+    margin-top: 80px;
+}
+.delete-btn{
+    margin-left: 35rem;
+}
+
+.modal{
+    --bs-modal-width: 900px;
+}
+/* .modal-content{
+    background: white;
+    backdrop-filter: blur(10px);
+} */
+body{
+    background: transparent;
+    backdrop-filter: blur(3px);
+}
+.cart-pro-lay{
+    margin-top: 25px;
+}
+.card-img-top{
+    width: 250px;
+    margin-left:50px;
+    margin-top: 15px;
+}
+
+.pm{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
