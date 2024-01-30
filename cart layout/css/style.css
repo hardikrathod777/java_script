@@ -1,0 +1,30 @@
+.bg-color{
+    background-color: #eaeded;
+}
+p{
+    margin-bottom: 0 !important;
+    color: black;
+}
+.main-9{
+    background-color: white; padding: 0px 10px;
+}
+.shop-cart{
+    border-bottom: 1px solid #e7e7e7; 
+    padding:10px 10px 7px 10px;
+}
+.pm{
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+}
+span{
+    margin: 0px 10px;
+}
+.buy{
+    width: 285px;
+    height: 29px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color: #ffd814;
+    margin: 0px 0px 50px 0px;
+}
